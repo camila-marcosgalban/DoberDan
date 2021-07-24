@@ -1,52 +1,78 @@
-body{
-    background-color: #e0e0bc;
-    font-family: serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+	background-color: #e0e0bc;
+	font-family: serif;
 }
 
-Nav, footer{
-    background-color: #d8b881;
+Nav,
+footer {
+	background-color: #d8b881;
 }
 
 .titlePoster {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-weight: 500;
-    width: 100%;
-    font-size: 2rem;
+	font-family: "Montserrat", sans-serif;
+	font-size: 48px;
+	color: #fff;
+	margin: 0px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: bold;
 }
-
 
 .contenedorTitulo {
-    position: relative;
+	height: 38vh;
+	width: 100%;
+	background-image: url(/imgs/poster.jpg);
+	background-size: contain;
+	display: table;
+	background-attachment: fixed;
 }
 
-.contenedorCarousel{
-    margin: 1rem;
+.contenedorCarousel {
+	margin: 1rem;
 }
-
 
 @media only screen and (min-width: 600px) {
-  .titlePoster {
-    font-size: 3rem;
-}
-    
-    .contenedorCarousel{
-   padding: 2rem 15rem;
+	.titlePoster {
+		font-size: 3rem;
+	}
+
+	.contenedorCarousel {
+		padding: 2rem 15rem;
+	}
 }
 
+#servicios {
+	background-color: #d8b881;
 }
 
-#servicios{
-    background-color: #d8b881;
+#buttonCalcular {
+	text-align: center;
 }
 
-#buttonCalcular{
-    text-align: center;
+.hideCalcular {
+	display: none;
 }
 
-.hideCalcular{
-    display: none;
+div.modal-content {
+	background-color: #d8b881;
+}
+
+div.modal-header {
+	border-bottom: 1px #d8b881 solid;
+}
+
+div.modal-footer {
+	border-top: 1px #d8b881 solid;
+	justify-content: center;
+}
+
+.btn-aceptar {
+	background-color: #f0cd92;
+}
+
+.btn-aceptar:hover {
+	background-color: #eec57f;
 }

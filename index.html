@@ -41,8 +41,7 @@
 
     <main>
         <div class="contenedorTitulo">
-            <img src="imgs/poster.jpg" alt="poster" class="img-fluid">
-            <h1 class="display-1 text-center titlePoster">¡Bienvenidos a Eslovenia!</h1>
+            <h1 class="display-1 titlePoster">¡Bienvenidos a Eslovenia!</h1>
         </div>
         <p class="lead text-center mt-5">¡Descubre las bellezas de Eslovenia hospedándote con nosotros en Dober Dan!</p>
         <!-- carousel -->
@@ -121,44 +120,48 @@
     </section>
     <section id="reserva">
         <div class="container" class="row">
-            <div id="calcularClosed">
-                <button type="button" class="btn btn-light col-2 mx-auto d-flex mt-4 mb-5" id="buttonCalcular">Calcular costo de estadia</button>
-            </div>
-            <div id="calcularOpened" class="row hideCalcular">
-                <h3 class="mt-4">Calcula el costo de tu estadía:</h3>
-                <div class="mb-3 col-6 col-md-2 mt-3">
-                    <label for="FechaIngreso" class="form-label">Check-In</label>
-                    <input type="date" class="form-control" id="FechaIngreso" required>
+            <div class="mb-5 pt-5">
+                <div id="calcularClosed" class="mt-5 pb-1">
+                    <button type="button" class="btn btn-light col-2 mx-auto d-flex mt-4 mb-5" id="buttonCalcular">
+                        Calcular costo de estadia
+                        </button>
                 </div>
-                <div class="mb-3  col-6 col-md-2 mt-3">
-                    <label for="FechaSalida" class="form-label">Check-Out</label>
-                    <input type="date" class="form-control" id="FechaSalida" required>
-                </div>
-                <div class="mb-3 col-6 col-md-3 mt-3">
-                    <label for="CantidadHuspedes" class="form-label">Cantidad de huspedes:</label>
-                    <select id="cantidadHuespedes" class="form-select" aria-label="Default select example" required>
-                        <option selected> </option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>
-                <div class="mb-3 col-6 col-md-3 mt-3">
-                    <label for="Cuarto" class="form-label">Cuarto:</label>
-                    <select id="Cuarto" class="form-select" aria-label="Default select example" required>
-                        <option selected> </option>
-                        <option value="Opción Standard">Opción Standard</option>
-                        <option value="Opción Premium">Opción Premium</option>
-                    </select>
-                </div>
-                <div class="col-6 col-md-2 mt-2 mb-5 mt-md-5">
-                    <a href="reserva.html"><button type="button" class="btn btn-light" id="buttonForm1">Calcular</button></a>
+                <div id="calcularOpened" class="row hideCalcular">
+                    <h3 class="mt-4">Calcula el costo de tu estadía:</h3>
+                    <div class="mb-3 col-6 col-md-2 mt-3">
+                        <label for="FechaIngreso" class="form-label">Check-In</label>
+                        <input type="date" class="form-control" id="FechaIngreso" required>
+                    </div>
+                    <div class="mb-3  col-6 col-md-2 mt-3">
+                        <label for="FechaSalida" class="form-label">Check-Out</label>
+                        <input type="date" class="form-control" id="FechaSalida" required>
+                    </div>
+                    <div class="mb-3 col-6 col-md-3 mt-3">
+                        <label for="CantidadHuspedes" class="form-label">Cantidad de huspedes:</label>
+                        <select id="cantidadHuespedes" class="form-select" aria-label="Default select example" required>
+                            <option selected> </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-6 col-md-3 mt-3">
+                        <label for="Cuarto" class="form-label">Cuarto:</label>
+                        <select id="Cuarto" class="form-select" aria-label="Default select example" required>
+                            <option selected> </option>
+                            <option value="Opción Standard">Opción Standard</option>
+                            <option value="Opción Premium">Opción Premium</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-md-2 mt-2 mb-5 mt-md-5">
+                        <a href="reserva.html"><button type="button" class="btn btn-light" id="buttonForm1">Calcular</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class=" text-center p-2">
+    <footer id="bottom" class=" text-center p-2">
         <p class="p-2">&copy;<img src="imgs/doberdan_black.png" alt="logotipo"></p>
     </footer>
 
