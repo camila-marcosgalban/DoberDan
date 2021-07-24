@@ -24,7 +24,7 @@ footer {
 .contenedorTitulo {
 	height: 38vh;
 	width: 100%;
-	background-image: url(/imgs/poster.jpg);
+	background-image: url(../imgs/poster.jpg);
 	background-size: contain;
 	display: table;
 	background-attachment: fixed;
