@@ -3,6 +3,7 @@
 body {
 	background-color: #e0e0bc;
 	font-family: serif;
+	overflow-x: hidden;
 }
 
 Nav,
@@ -22,10 +23,11 @@ footer {
 }
 
 .contenedorTitulo {
-	height: 38vh;
-	width: 100%;
+	width: 100vw;
+	height: 40vh;
 	background-image: url(../imgs/poster.jpg);
-	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
 	display: table;
 	background-attachment: fixed;
 }
